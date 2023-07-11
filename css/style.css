@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+
+:root {
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#fff;
+    --text-black-700:#e9e9e9;
+    --main-color:#ec1839;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+
+.section {
+    width: 100vw;
+    padding: 70px 50px 50px 50px;
+    position: relative;
+    height: 100vh;
+    background-color: var(--bg-black-900);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: relative;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: var(--bg-black-100);
+    padding: 15px;
+    border-bottom: 2px solid var(--bg-black-50);
+    display: flex;
+    position: fixed;
+    z-index: 100;
+}
+.navbar .logo {
+    width: 70px;
+    height: 70px;
+    left: 0;
+}
+
+.navbar .logo img {
+    width: 50px;
+}
+
+.navbar .nav {
+    display: flex;
+    position: absolute;
+    right: 50px;
+    height: 100%;
+    top: 25px;
+}
+
+.navbar .nav li {
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+.navbar .nav li a {
+    padding: 10px;
+    border-radius: 10px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    transition: all .3s ease;
+}
+
+.navbar .nav li a:hover {
+    background-color: var(--text-black-900);
+    color: var(--main-color);
+}
+
+/* SECTION 1 HOME */
+
+.home {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.home .text {
+    flex: 0 0 60%;
+    max-width: 60%;
+    color: var(--text-black-900);
+    padding-right: 50px;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.home .text .name {
+    font-weight: 700;
+    color: var(--text-black-900);
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home .text .name span {
+    font-family: 'Clicker Script' , cursive;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+.home .text .job {
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--text-black-900);
+    margin-bottom: 15px;
+}
+
+.home .text .job span {
+    color: var(--main-color);
+}
+
+.home .text p {
+    font-size: 16px;
+    color: var(--text-black-700);
+    letter-spacing: 1px;
+}
+
+.home .text .code {
+    margin-top: 50px;
+}
+
+.home .text .code .btn {
+    padding: 10px 30px;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: var(--text-black-900);
+    transition: all .3s ease;
+}
+
+.home .text .code .btn:hover {
+    color: var(--main-color);
+    background-color: var(--text-black-900);
+}
+
+.home .logo {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+
+.home .logo img {
+    width: 300px;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+
+.home .logo::before {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-right: 10px solid var(--text-black-900);
+    border-bottom: 10px solid var(--text-black-900);
+    right: 60px;
+    bottom: 0px;
+}
+
+.home .logo::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-top: 10px solid var(--text-black-900);
+    border-left: 10px solid var(--text-black-900);
+    left: 920px;
+    top: 100px;
+}
+
+/* SECTION 2 ABOUT */
+
+.about {
+    width: 100%;
+}
+.about .title {
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.about .title::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-bottom: 5px solid var(--main-color);
+    top: -10px;
+    left: 0px;
+}
+.about .title::before {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 30px;
+    border-bottom: 5px solid var(--main-color);
+    top: 5px;
+    left: 0px;
+}
+.about .text h2 {
+    color: var(--text-black-900);
+    margin-bottom: 30px;
+}
+.about .text h2 span {
+    color: var(--main-color);
+}
+.about .text p {
+    color: var(--text-black-700);
+    margin-bottom: 40px;
+}
+.profil-info {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-left: 30px;
+}
+.profil-info .profil {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+.profil-info .profil p {
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.profil-info .profil p span {
+    font-weight: 400;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.skills {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
+.skills .skill-item h5 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: var(--text-black-900);
+}
+.skills .skill-item .progress {
+    background-color: var(--bg-black-100);
+    width: 100%;
+    height: 10px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.skills .skill-item .progress .progress-in {
+    height: 10px;
+    border-radius: 25px;
+    background-color: var(--main-color);
+}
+.skills .skill-item .progress .skill-percent {
+    color: var(--text-black-900);
+    position: absolute;
+    top: -25px;
+    right: 0;
+}
+
+/* PORTFOLIO */
+.portfolio {
+    color: var(--text-black-900);
+    width: 100%;
+}
+.portfolio .title {
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.portfolio .title::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-bottom: 5px solid var(--main-color);
+    top: -10px;
+    left: 0px;
+}
+.portfolio .title::before {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 30px;
+    border-bottom: 5px solid var(--main-color);
+    top: 5px;
+    left: 0px;
+}
+.portfolio .text h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.portfolio .text p {
+    margin-bottom: 20px;
+    color: var(--text-black-700);
+}
+.portfolio .row .image-item {
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+.portfolio .row .image-item .image {
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid var(--bg-black-100);
+}
+.portfolio .row .image-item .hover {
+    background-color: rgba(57, 57, 57, .8);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: all .3s ease;
+    opacity: 0;
+}
+.portfolio .row .image-item .hover span {
+    color: var(--main-color);
+    background-color: var(--text-black-900);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    transition: .3s;
+}
+.portfolio .row .image-item .hover a {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-black-900);
+    color: var(--main-color);
+    font-weight: 700;
+    text-align: center;
+    line-height: 50px;
+    transition: .3s;
+}
+.portfolio .row .image-item .hover a:hover {
+    color: var(--text-black-900);
+    background-color: var(--bg-black-900);
+}
+.portfolio .row .image-item .hover:hover,
+.portfolio .row .image-item .hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+.portfolio .row .image-item .image img {
+    width: 200px;
+}
+
+/* CONTACT */
+.contact {
+    color: var(--text-black-900);
+    width: 100%;
+}
+.contact .title {
+    color: var(--text-black-900);
+    font-weight: 700;
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+.contact .title::after {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-bottom: 5px solid var(--main-color);
+    top: -10px;
+    left: 0px;
+}
+.contact .title::before {
+    content: '';
+    position: absolute;
+    height: 60px;
+    width: 30px;
+    border-bottom: 5px solid var(--main-color);
+    top: 5px;
+    left: 0px;
+}
+.contact h3 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--main-color);
+}
+.contact h2 {
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.contact .contact-item {
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+}
+.contact .contact-item .icon {
+    font-size: 30px;
+}
+.contact .contact-item .icon .fa {
+    color: var(--main-color);
+}
+.contact .contact-item h5 {
+    font-size: 16px;
+    padding: 10px 0;
+}
